@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.note {
+  background-color: #fefe92;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+}
