@@ -15,12 +15,12 @@ function App() {
     {
       id: nanoid(),
       text: "This is the second thing in the useState",
-      date: "39/06/2023"
+      date: "29/07/2023"
     },
     {
       id: nanoid(),
       text: "This is the third thing in the useState",
-      date: "49/06/2023"
+      date: "30/07/2023"
     }
   ]);
 
@@ -56,9 +56,12 @@ function App() {
   }
 
   const deleteNote = (id) => {
-    const newNotes = notes.filter((note) => note.id !== id);
-    setNotes(newNotes)
-  }
+    const confirmDelete = window.confirm("Are you sure you want to delete it?");
+    if (confirmDelete) {
+      const newNotes = notes.filter((note) => note.id !== id);
+      setNotes(newNotes);
+    }
+  };
 
   return (
     <div className={`${darkMode && 'dark-mode'}`}>

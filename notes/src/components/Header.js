@@ -1,13 +1,19 @@
 import React from "react";
 
-const Header = ({handleToggleDarkMode}) => {
-    return (
-        <div className="header">
-            <h1>React-Notes</h1>
-            <button onClick={() => handleToggleDarkMode(previousDarkMode => !previousDarkMode)} className="mode">Toggle Mode</button>
-        </div>
-    )
-}
-
+const Header = ({ handleToggleDarkMode, darkMode }) => {
+  return (
+    <div className="header">
+      <h1>React-Notes</h1>
+      <label className="switch">
+        <input
+          type="checkbox"
+          checked={darkMode}
+          onChange={() => handleToggleDarkMode(previousDarkMode => !previousDarkMode)}
+        />
+        <span className="slider round"></span>
+      </label>
+    </div>
+  );
+};
 
 export default Header;
