@@ -10,17 +10,17 @@ function App() {
     {
     id: nanoid(),
     text: "This is the first thing in the useState",
-    date: "29/06/2023"
+    date: "06/29/2023"
     },
     {
       id: nanoid(),
       text: "This is the second thing in the useState",
-      date: "29/07/2023"
+      date: "07/29/2023"
     },
     {
       id: nanoid(),
       text: "This is the third thing in the useState",
-      date: "30/07/2023"
+      date: "07/30/2023"
     }
   ]);
 
