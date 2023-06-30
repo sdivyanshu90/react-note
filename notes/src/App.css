@@ -140,9 +140,6 @@ textarea:focus {
   content: "";
   position: absolute;
   height: 18px;
-  background-image: url('./assets/moon.png');
-  transform: translateX(24px);
-  background-size: cover;
   width: 18px;
   right: 3px;
   bottom: 3px;
@@ -155,9 +152,6 @@ textarea:focus {
 .slider.light:before {
   content: "";
   position: absolute;
-  background-image: url('./assets/sun.png');
-  background-size: cover;
-  transform: translateX(0);
   height: 12px;
   width: 12px;
   left: 6px;
