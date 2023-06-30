@@ -12,7 +12,9 @@ const NodeList = ({notes, handleAddNote, handleDeleteNote}) => {
                     date={note.date}
                     handleDeleteNote={handleDeleteNote}
                     />)}
-            <AddNote handleAddNote={handleAddNote}/>
+            <AddNote 
+                handleAddNote={handleAddNote}
+            />
         </div>
         
     )

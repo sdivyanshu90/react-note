@@ -10,7 +10,8 @@ const Header = ({ handleToggleDarkMode, darkMode }) => {
           checked={darkMode}
           onChange={() => handleToggleDarkMode(previousDarkMode => !previousDarkMode)}
         />
-        <span className="slider round"></span>
+        <span 
+          className="slider round"></span>
       </label>
     </div>
   );

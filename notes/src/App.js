@@ -26,9 +26,7 @@ function App() {
 
   const [searchText, setSearchText] = useState('');
 
-
   const [darkMode, setDarkMode] = useState(false);
-
 
 
   useEffect(() => {
